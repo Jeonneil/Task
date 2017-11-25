@@ -202,7 +202,7 @@ $scope.delete = function(id){
         // url:"http://192.168.8.101/medify/include/search.php",
 //        url: "https://medify.000webhostapp.com/search.php",
 //         url:"http://localhost/Vercons/include/search.php",
-      url: "https://vercons.000webhostapp.com/Vercons/include/search.php",
+      url: "https://vercons.000webhostapp.com/Vercons/search.php",
         method: "GET"
       })
       .then(function(response) {
