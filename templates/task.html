@@ -1,0 +1,43 @@
+<ion-view ng-controller="TodoController">
+  <!-- <div class="bar bar-header">
+
+  </div> -->
+  <div class="bar bar-header" style="background:none;">
+    <i class="icon ion-arrow-left-c myicon1" ui-sref="app.alarmMed"></i>
+  </div>
+  <div class="small-container med-bg">
+    <!-- <div class="search-bar">
+        <div class="list list-inset">
+          <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" ng-model="search.menu_name" placeholder="Search here...">
+          </label>
+        </div>
+      </div> -->
+
+    <div class="background-top">
+      <!-- <button class="btn-float" ui-sref="app.addMed"><i class="icon ion-plus myicon"></i></button> -->
+    </div>
+  </div>
+  <ion-content>
+    <div class="container">
+
+      <ul class="list home-list">
+        <!-- <div class="item item-divider "><h2 style="font-size:17px; color:#000;">Medicines</h2></div> -->
+        <div data-ng-repeat="a in medlist track by $index">
+          <li class="item">
+            <div class="row">
+              <!-- <div class="col col-80" ui-sref="app.addMed">
+                <span>{{a['medicine_name']}}</span>
+              </div> -->
+              <div class="col col-80">
+                <span style="margin-left:15%;"><p>{{a['medicine_quantity']}}</p></span>
+              </div>
+
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>

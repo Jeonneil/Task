@@ -1,0 +1,69 @@
+angular.module('starter', ['ionic', 'starter.controllers'])
+.config(function($stateProvider, $urlRouterProvider){
+$stateProvider
+.state('app', {
+  url:'/app',
+  abstract:true,
+  templateUrl:'templates/menu.html'
+})
+.state('app.promosandsales',{
+  url:'/promosandsales',
+  views:{
+    'menuContent':{
+      templateUrl:'templates/promosandsales.html',
+    }
+  }
+})
+.state('app.announcement',{
+  url:'/announcement',
+  views:{
+    'menuContent':{
+      templateUrl:'templates/announcement.html',
+    }
+  }
+})
+.state('app.about',{
+  url:'/about',
+  views:{
+    'menuContent':{
+      templateUrl:'templates/about.html',
+    }
+  }
+})  
+.state('app.homepage',{
+  url:'/homepage',
+  views:{
+    'menuContent':{
+      templateUrl:'templates/homepage.html',
+    }
+  }
+})
+.state('app.addMed',{
+  url:'/addMed',
+  views:{
+    'menuContent':{
+      templateUrl:'templates/addMed.html',
+    }
+  }
+})
+
+.state('app.map',{
+  url:'/map',
+  views:{
+    'menuContent':{
+      templateUrl:'templates/map.html',
+    }
+  }
+})
+
+.state('app.search',{
+  url:'/search',
+  views:{
+    'menuContent':{
+      templateUrl:'templates/search.html',
+    }
+  }
+});
+
+  $urlRouterProvider.otherwise('/app/homepage');
+});

@@ -1,0 +1,51 @@
+<ion-view ng-controller="TodoController">
+  <!-- <div class="bar bar-header">
+
+  </div> -->
+<!--
+  <div class="bar bar-header">
+  <h1 class="title">bar-light</h1>
+  </div>
+-->
+  <div class="small-container med-bg">
+    <div class="search-bar">
+        <div class="list list-inset">
+          <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" ng-model="search.menu_name" placeholder="Search here...">
+          </label>
+        </div>
+      </div>
+
+    <div class="background-top">
+       <button class="btn-float" ui-sref="app.addMed"><i class="icon ion-search myicon"></i></button> 
+    </div>
+  </div>
+  <ion-content>
+    <div class="container">
+
+      <ul class="list home-list">
+        <!-- <div class="item item-divider "><h2 style="font-size:17px; color:#000;">Medicines</h2></div> -->
+        <div data-ng-repeat="a in medlist track by $index">
+          <li class="item">
+            <div class="row">
+              <div class="col col-80" ui-sref="app.task">
+                <span>{{a['medicine_name']}}</span>
+              </div>
+              <!-- <div class="col col-30">
+                <span style="margin-left:15%;">{{a['medicine_quantity']}}</span>
+              </div> -->
+              <!-- <div class="col col-10">
+                <a ng-click="edit(a.medicine_list_ID, a.medicine_name, a.medicine_quantity)"><i class="ion ion-android-create" style="font-size:20px;" ui-sref="app.addMed"></i></a>
+              </div> -->
+              <div class="col col-10">
+                <i class="ion ion-chevron-right" style="font-size:20px; margin-left:20px;"></i>
+                <!-- <a ng-click="delete(a.medicine_list_ID)"><i class="ion ion-chevron-right" style="font-size:20px; margin-left:20px;"></i></a> -->
+              </div>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>

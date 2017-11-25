@@ -1,0 +1,37 @@
+<ion-view ng-controller="SearchController">
+ <div class="bar bar-header">
+    <i class="icon ion-arrow-left-c arrow-back" ui-sref="app.homepage"></i>
+    <div class="col col-80">
+                <img class="side-logo" src="assets/images/vercons_icon.png" style="heigth:30px; width:30px; margin-left:90px; margin-top:5px;"><h4><span class="title" style="margin-top:10px; margin-left:30px;"><b>Search</b></span></h4>
+    </div>
+  </div>
+
+  <ion-content class="padding" style="margin-top:15%">
+    <div class="search-bar">
+        <div class="list list-inset">
+          <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" ng-model="search.item_name" placeholder="Search here...">
+          </label>
+        </div>
+      </div>
+    
+<div class="add-list">
+<div class="list card" ng-repeat="x in searchlist | filter:search" ui-sref="app.map">
+
+  <div class="item item-avatar">
+
+    <h2>{{x['item_name']}}</h2>
+    <p>
+     {{x['item_category']}}
+    </p>
+
+  </div>
+
+
+</div>
+</div>
+
+
+</ion-content>
+</ion-view>
