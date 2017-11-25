@@ -1,6 +1,6 @@
 <?php
 
-  $conn = mysqli_connect('localhost','root','','vercons_db');
+  $conn = mysqli_connect('localhost','id3744092_root','Admin123!','id3744092_vercons_db');
 
   if (isset($_SERVER['HTTP_ORIGIN'])) {
         header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
