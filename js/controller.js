@@ -204,8 +204,13 @@ $scope.delete = function(id){
     $http({
         // url:"http://192.168.8.101/medify/include/search.php",
 //        url: "https://medify.000webhostapp.com/search.php",
+<<<<<<< HEAD
          url:"http://localhost/Vercons/include/search.php",
 //      url: "https://vercons.000webhostapp.com/search.php",
+=======
+//         url:"http://localhost/Vercons/include/search.php",
+      url: "https://vercons.000webhostapp.com/search.php",
+>>>>>>> eab242f7b3f7b2cbbed6e76891fb6a45b0a3dbe0
         method: "GET"
       })
       .then(function(response) {
