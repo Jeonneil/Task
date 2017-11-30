@@ -33,14 +33,14 @@
   position: absolute;
 }
 .btn-float{
-  height: 70px;
-  width: 70px;
+  height: 57px;
+  width: 57px;
   border: none;
   border-radius: 50%;
   color: #fff;
   position: absolute;
   bottom: -30px;
-  right: 35px;
+  right: 20px;
   background: #5677FC; /* For browsers that do not support gradients */
   z-index: 999;
 
@@ -69,18 +69,18 @@
 
 .background-top{
   background-image: url(../assets/images/vercons-bg.jpg);
-  height: 300px;
+  height: 200px;
   width: 100%;
   background-size: cover;
   background-position: center;
 
   background-color: rgba(57, 68, 88, 0.3)!important;
   background-blend-mode: overlay;
-  position: relative;
+  position: absolute;
 }
 .background-header-promosandsales{
   background-image: url(../assets/images/promosandsale-bg.jpg);
-  height: 400px;
+  height: 200px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -92,7 +92,7 @@
 
 .background-header-announcement{
   background-image: url(../assets/images/announcement-bg.jpg);
-  height: 400px;
+  height: 200px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -103,8 +103,8 @@
 }
 
 .background-header-map{
-  background-image: url(../assets/images/map.png);
-  height: 400px;
+  background-image: url(../assets/images/map_toothpaste.png);
+  height: 200px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -127,12 +127,12 @@
   height: 250px;
 }
 .home-list{
-  padding-top: 360px;
+  padding-top: 200px;
   padding-bottom: 60px;
   margin: 5px 5px 5px 5px;
 }
 .home-list1{
-
+  padding-top: 220px;
   padding-bottom: 60px;
   margin: 5px 5px 5px 5px;
 }
@@ -151,11 +151,11 @@
   margin-left: 15px;
 }
 .card-promosandsales{
-  padding-top: 465px;
+  padding-top: 315px;
   margin: 5px 5px 5px 5px;
 }
 .card-size-promosandsales{
-  height: 160px;
+  height: 100px;
 }
 .card-size-about{
   height: 560px;
